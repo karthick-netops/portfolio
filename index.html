@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karthick K | Senior IT Infrastructure & Security Engineer</title>
+  <meta name="description" content="Explore Karthick K's professional portfolio in IT infrastructure, network security, cloud systems, cybersecurity, zero-trust access, and enterprise infrastructure engineering.">
+  <meta name="keywords" content="Karthick K, IT Infrastructure Engineer, Security Engineer, Network Security, FortiGate, pfSense, ZTNA, Zabbix, Azure, Bengaluru">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Karthick K | Senior IT Infrastructure & Security Engineer">
+  <meta property="og:description" content="Building Secure, Resilient & Intelligent IT Infrastructure across enterprise environments. 6+ years experience, 99.2%–100% uptime, ₹55.9L+ verified cost savings.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon Monogram SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23080D18'/><rect x='5' y='5' width='90' height='90' rx='16' fill='none' stroke='%2335D9FF' stroke-width='4'/><text x='50' y='65' font-family='sans-serif' font-weight='800' font-size='42' fill='%2335D9FF' text-anchor='middle'>KK</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Modal Overlay -->
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+        <i data-lucide="x"></i>
+      </button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- STICKY NAVBAR -->
+  <nav class="navbar" id="mainNavbar">
+    <div class="container navbar-inner">
+      <a href="#home" class="brand">
+        <div class="brand-monogram">KK</div>
+        <div class="brand-info">
+          <span class="brand-name">Karthick K</span>
+          <span class="brand-title">SR. INFRASTRUCTURE & SEC ENGINEER</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#expertise" class="nav-link">Expertise</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>SYSTEM OPTIMAL</span>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-sm">Let's Connect</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#expertise" class="nav-link">Expertise</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#certifications" class="nav-link">Certifications</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <div style="margin-top:auto; padding-top:1rem; border-top:1px solid var(--border-slate);">
+      <button class="btn btn-primary btn-sm" style="width:100%;" onclick="openResumeModal()">View Digital Resume</button>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <i data-lucide="shield-check" style="width:14px; height:14px;"></i>
+          IT INFRASTRUCTURE • SECURITY • CLOUD
+        </div>
+        
+        <h1 class="hero-title">
+          Building Secure, Resilient & <span class="highlight-gradient">Intelligent IT Infrastructure.</span>
+        </h1>
+
+        <p class="hero-description">
+          I'm Karthick K, an IT Infrastructure and Security Engineer focused on building reliable enterprise systems, strengthening network security, and optimizing infrastructure through automation.
+        </p>
+
+        <div class="hero-meta-strip">
+          <div class="meta-item">
+            <i data-lucide="map-pin" style="width:16px; height:16px;"></i>
+            <span>Bengaluru, India</span>
+          </div>
+          <div class="meta-item">
+            <i data-lucide="clock" style="width:16px; height:16px;"></i>
+            <span>6+ Years Experience</span>
+          </div>
+          <div class="meta-item">
+            <i data-lucide="lock" style="width:16px; height:16px;"></i>
+            <span>Zero Security Breaches</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            Explore My Work <i data-lucide="arrow-down" style="width:16px; height:16px;"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            Get in Touch <i data-lucide="mail" style="width:16px; height:16px;"></i>
+          </a>
+          <button class="btn btn-outline" onclick="openResumeModal()">
+            Download Resume <i data-lucide="file-text" style="width:16px; height:16px;"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-visual-wrapper">
+        <div class="visual-hud-overlay">
+          <div class="hud-badge">
+            <i data-lucide="activity" style="width:12px; height:12px; vertical-align:-1px;"></i>
+            LIVE TOPOLOGY MAP
+          </div>
+          <div class="hud-badge" style="color:var(--accent-teal);">
+            ENCRYPTION: AES-256 GCM
+          </div>
+        </div>
+
+        <canvas id="nodeCanvas"></canvas>
+
+        <div class="hud-telemetry">
+          <span>SELECTED NODE: <strong id="hudNodeName">KARTHICK CORE</strong></span>
+          <span>STATUS: <strong id="hudPing" style="color:var(--accent-teal);">ONLINE (1ms)</strong></span>
+          <span>MANAGED NODES: <strong>1,641</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">
+          <i data-lucide="user" style="width:14px; height:14px;"></i>
+          ABOUT KARTHICK K
+        </div>
+        <h2 class="section-title">Engineering Infrastructure That Works.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text-content">
+          <p style="margin-bottom:1rem;">
+            I'm an IT Infrastructure and Security Engineer with over six years of experience supporting enterprise environments across aerospace, manufacturing, and technology operations.
+          </p>
+          <p style="margin-bottom:1rem;">
+            My work focuses on building dependable infrastructure, securing networks and endpoints, improving operational visibility, and creating efficient systems through automation.
+          </p>
+          <p>
+            I bring together hands-on technical expertise, structured problem-solving, and a security-first mindset to help organizations maintain resilient and reliable IT environments.
+          </p>
+        </div>
+
+        <div class="about-cards-grid">
+          <div class="glass-card about-card">
+            <span class="card-num">01</span>
+            <h3 class="about-card-title">Infrastructure Reliability</h3>
+            <p class="about-card-desc">
+              Focus on uptime engineering, 24/7 incident resolution, Technitium DNS failover clustering, HA reverse proxies, and proactive system availability.
+            </p>
+          </div>
+
+          <div class="glass-card about-card">
+            <span class="card-num">02</span>
+            <h3 class="about-card-title">Security Engineering</h3>
+            <p class="about-card-desc">
+              Network defense via FortiGate & pfSense firewalls, SEQRITE EDR/XDR protection, Netbird ZTNA zero-trust access, Group Policy security, and VAPT risk governance.
+            </p>
+          </div>
+
+          <div class="glass-card about-card">
+            <span class="card-num">03</span>
+            <h3 class="about-card-title">Operational Excellence</h3>
+            <p class="about-card-desc">
+              Infrastructure automation via Bash/PowerShell, IT asset governance across 1,641 nodes via Snipe-IT, passbolt vaulting, and ₹55.9L+ verified cost optimization.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT / KEY ACHIEVEMENTS SECTION -->
+  <section id="impact" class="section-padding impact-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">
+          <i data-lucide="bar-chart-3" style="width:14px; height:14px;"></i>
+          VERIFIED PERFORMANCE
+        </div>
+        <h2 class="section-title">Measurable Career Impact</h2>
+        <p class="section-subtitle">Empirical results delivered across enterprise infrastructure operations and security initiatives.</p>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="glass-card metric-card">
+          <div class="metric-value" data-target="99.2%">0%</div>
+          <div class="metric-label">Infrastructure Uptime</div>
+          <div class="metric-subtext">Sustained 99.2%–100% operational availability across FY26 review cycles.</div>
+        </div>
+
+        <div class="glass-card metric-card">
+          <div class="metric-value" data-target="₹55.9L+">₹0</div>
+          <div class="metric-label">Verified Cost Savings</div>
+          <div class="metric-subtext">Cumulative savings delivered through hardware reuse, hypervisor consolidation & vendor optimization.</div>
+        </div>
+
+        <div class="glass-card metric-card">
+          <div class="metric-value" data-target="97.65%">0%</div>
+          <div class="metric-label">SLA Compliance</div>
+          <div class="metric-subtext">Consistently exceeded internal service level agreements for Tier 2/3 engineering support.</div>
+        </div>
+
+        <div class="glass-card metric-card">
+          <div class="metric-value" data-target="1,641">0</div>
+          <div class="metric-label">Assets Under Governance</div>
+          <div class="metric-subtext">Centralized tracking & compliance governance managed via Snipe-IT & Active Directory.</div>
+        </div>
+
+        <div class="glass-card metric-card">
+          <div class="metric-value" data-target="250+">0</div>
+          <div class="metric-label">Monthly Support Tickets</div>
+          <div class="metric-subtext">High-volume Tier 2/3 enterprise IT systems resolution with >90% CSAT rating.</div>
+        </div>
+
+        <div class="glass-card metric-card">
+          <div class="metric-value" data-target="Zero">Zero</div>
+          <div class="metric-label">Reported Security Breaches</div>
+          <div class="metric-subtext">Flawless security enforcement record maintained throughout tenure.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNICAL EXPERTISE SECTION -->
+  <section id="expertise" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">
+          <i data-lucide="cpu" style="width:14px; height:14px;"></i>
+          TECHNICAL CAPABILITIES
+        </div>
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-subtitle">Enterprise-grade technologies and frameworks categorized by operational domain.</p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="expertise-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Skills</button>
+        <button class="filter-btn" data-filter="security">Security & Defense</button>
+        <button class="filter-btn" data-filter="systems">Systems & Cloud</button>
+        <button class="filter-btn" data-filter="operations">Monitoring & Ops</button>
+      </div>
+
+      <!-- Realtime Search Input -->
+      <div class="skills-search-box">
+        <i data-lucide="search" class="skills-search-icon" style="width:18px; height:18px;"></i>
+        <input type="text" id="skillsSearch" class="skills-search-input" placeholder="Search technical skills (e.g. FortiGate, Azure, Zabbix, Bash)...">
+      </div>
+
+      <div class="expertise-grid">
+        <!-- Category 1 -->
+        <div class="glass-card expertise-category-card" data-category="security">
+          <div class="category-header">
+            <div class="category-icon"><i data-lucide="shield"></i></div>
+            <h3 class="category-title">Network & Infrastructure Security</h3>
+          </div>
+          <p class="category-desc">Firewall administration, perimeter defense, zero-trust network access, and VPN connectivity.</p>
+          <div class="skill-tags-wrapper">
+            <span class="skill-tag">FortiGate</span>
+            <span class="skill-tag">pfSense</span>
+            <span class="skill-tag">IPSec VPN</span>
+            <span class="skill-tag">Site-to-Site VPN</span>
+            <span class="skill-tag">SD-WAN</span>
+            <span class="skill-tag">VLAN Segmentation</span>
+            <span class="skill-tag">Zero Trust (Netbird ZTNA)</span>
+            <span class="skill-tag">Firewall Rule Config</span>
+            <span class="skill-tag">Log Analysis</span>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="glass-card expertise-category-card" data-category="security">
+          <div class="category-header">
+            <div class="category-icon"><i data-lucide="crosshair"></i></div>
+            <h3 class="category-title">Endpoint & Threat Protection</h3>
+          </div>
+          <p class="category-desc">Centralized threat monitoring, endpoint security governance, and EDR/XDR deployments.</p>
+          <div class="skill-tags-wrapper">
+            <span class="skill-tag">SEQRITE EDR</span>
+            <span class="skill-tag">SEQRITE XDR</span>
+            <span class="skill-tag">Endpoint Security Admin</span>
+            <span class="skill-tag">Threat Monitoring</span>
+            <span class="skill-tag">Security Operations (SecOps)</span>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="glass-card expertise-category-card" data-category="security">
+          <div class="category-header">
+            <div class="category-icon"><i data-lucide="search-code"></i></div>
+            <h3 class="category-title">Vulnerability & Risk Management</h3>
+          </div>
+          <p class="category-desc">Proactive vulnerability scanning, cyber maturity assessments, and remediation tracking.</p>
+          <div class="skill-tags-wrapper">
+            <span class="skill-tag">Nmap</span>
+            <span class="skill-tag">OpenVAS</span>
+            <span class="skill-tag">Vulnerability Assessment</span>
+            <span class="skill-tag">Penetration Testing Fundamentals</span>
+            <span class="skill-tag">Cyber Maturity Assessment</span>
+            <span class="skill-tag">Risk Reporting</span>
+            <span class="skill-tag">Remediation Tracking</span>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="glass-card expertise-category-card" data-category="systems">
+          <div class="category-header">
+            <div class="category-icon"><i data-lucide="server"></i></div>
+            <h3 class="category-title">Systems Administration</h3>
+          </div>
+          <p class="category-desc">Enterprise directory services, identity management, server OS administration, and scripting.</p>
+          <div class="skill-tags-wrapper">
+            <span class="skill-tag">Linux (Ubuntu)</span>
+            <span class="skill-tag">Windows Server</span>
+            <span class="skill-tag">Active Directory</span>
+            <span class="skill-tag">Group Policy (GPO)</span>
+            <span class="skill-tag">LDAP / LDAPS</span>
+            <span class="skill-tag">Kerberos</span>
+            <span class="skill-tag">Microsoft Entra ID</span>
+            <span class="skill-tag">BitLocker</span>
+            <span class="skill-tag">AppLocker</span>
+            <span class="skill-tag">Bash</span>
+            <span class="skill-tag">PowerShell</span>
+          </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="glass-card expertise-category-card" data-category="systems">
+          <div class="category-header">
+            <div class="category-icon"><i data-lucide="cloud"></i></div>
+            <h3 class="category-title">Cloud & Infrastructure Automation</h3>
+          </div>
+          <p class="category-desc">Hybrid cloud infrastructure, cloud administration, Microsoft 365, and Infrastructure as Code.</p>
+          <div class="skill-tags-wrapper">
+            <span class="skill-tag">Microsoft Azure</span>
+            <span class="skill-tag">Terraform</span>
+            <span class="skill-tag">Microsoft 365</span>
+            <span class="skill-tag">Exchange Online</span>
+            <span class="skill-tag">SharePoint Online</span>
+            <span class="skill-tag">Infrastructure as Code</span>
+            <span class="skill-tag">Hybrid Cloud</span>
+          </div>
+        </div>
+
+        <!-- Category 6 -->
+        <div class="glass-card expertise-category-card" data-category="operations">
+          <div class="category-header">
+            <div class="category-icon"><i data-lucide="activity"></i></div>
+            <h3 class="category-title">Monitoring & Infrastructure Operations</h3>
+          </div>
+          <p class="category-desc">Observability pipelines, internal DNS clustering, web proxies, and disaster recovery planning.</p>
+          <div class="skill-tags-wrapper">
+            <span class="skill-tag">Zabbix 7.0</span>
+            <span class="skill-tag">Technitium DNS</span>
+            <span class="skill-tag">Nginx Reverse Proxy</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Root-Cause Analysis (RCA)</span>
+            <span class="skill-tag">Incident Management</span>
+            <span class="skill-tag">Backup & Disaster Recovery</span>
+            <span class="skill-tag">Business Continuity</span>
+          </div>
+        </div>
+
+        <!-- Category 7 -->
+        <div class="glass-card expertise-category-card" data-category="systems">
+          <div class="category-header">
+            <div class="category-icon"><i data-lucide="box"></i></div>
+            <h3 class="category-title">Virtualization & Storage</h3>
+          </div>
+          <p class="category-desc">Hypervisor consolidation, virtual server administration, and network-attached storage.</p>
+          <div class="skill-tags-wrapper">
+            <span class="skill-tag">Proxmox VE</span>
+            <span class="skill-tag">VMware</span>
+            <span class="skill-tag">Hyper-V</span>
+            <span class="skill-tag">TrueNAS</span>
+            <span class="skill-tag">SAN Storage</span>
+            <span class="skill-tag">Virtual Consolidation</span>
+          </div>
+        </div>
+
+        <!-- Category 8 -->
+        <div class="glass-card expertise-category-card" data-category="operations">
+          <div class="category-header">
+            <div class="category-icon"><i data-lucide="folder-check"></i></div>
+            <h3 class="category-title">IT Operations & Management</h3>
+          </div>
+          <p class="category-desc">Enterprise asset tracking, password vault management, IT budgeting, and vendor coordination.</p>
+          <div class="skill-tags-wrapper">
+            <span class="skill-tag">Snipe-IT</span>
+            <span class="skill-tag">Passbolt</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Jira</span>
+            <span class="skill-tag">Confluence</span>
+            <span class="skill-tag">IT Asset Management</span>
+            <span class="skill-tag">Vendor Coordination</span>
+            <span class="skill-tag">Cost Optimization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAREER JOURNEY TIMELINE -->
+  <section id="experience" class="section-padding" style="background:var(--bg-slate);">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">
+          <i data-lucide="briefcase" style="width:14px; height:14px;"></i>
+          CAREER PROGRESSION
+        </div>
+        <h2 class="section-title">Career Journey</h2>
+        <p class="section-subtitle">Over 6 years of hands-on enterprise IT infrastructure engineering and systems administration.</p>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card experience-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-company">Asteria Aerospace Limited</h3>
+                <div class="exp-location"><i data-lucide="map-pin" style="width:14px; height:14px;"></i> Bengaluru, Karnataka, India</div>
+              </div>
+            </div>
+
+            <!-- Role 1 -->
+            <div class="role-block">
+              <h4 class="role-title">Senior Engineer I – Technology Support</h4>
+              <span class="role-period">April 2025 – Present</span>
+              <ul class="exp-highlights-list">
+                <li>Maintained 99.2%–100% infrastructure uptime across FY26 review cycles while sustaining 97.65% SLA compliance.</li>
+                <li>Administered FortiGate & pfSense firewalls, IPSec VPN, deployed Zabbix monitoring, and implemented Technitium DNS failover clustering.</li>
+                <li>Implemented high-availability Nginx reverse proxy and deployed self-hosted Passbolt password manager.</li>
+                <li>Managed ₹1.90 crore annual IT budget, achieving ₹5 lakh in cost savings via hardware reuse and ₹50,000 in annual recurring savings via ISP redundancy.</li>
+                <li>Oversaw governance and compliance tracking for 1,641 enterprise IT assets via Snipe-IT.</li>
+              </ul>
+            </div>
+
+            <!-- Role 2 -->
+            <div class="role-block">
+              <h4 class="role-title">Engineer II – Technology Support</h4>
+              <span class="role-period">February 2023 – March 2025</span>
+              <ul class="exp-highlights-list">
+                <li>Achieved 99.5%–100% uptime with 96.03% SLA compliance across multi-site enterprise infrastructure.</li>
+                <li>Deployed SEQRITE EDR and XDR, pfSense firewalls, and established secure site-to-site VPN connectivity between Bengaluru & Gurugram.</li>
+                <li>Implemented 802.1Q VLAN segmentation and rolled out Netbird Zero Trust Network Access (ZTNA).</li>
+                <li>Hardened Group Policy security, maintaining a zero-security-breach record during the tenure.</li>
+                <li>Migrated enterprise network addressing to eliminate IP conflicts, DHCP, and DNS bottlenecks, delivering ₹55.9L+ in verified cost savings.</li>
+              </ul>
+            </div>
+
+            <div class="exp-tools-strip">
+              <span class="skill-tag">FortiGate</span>
+              <span class="skill-tag">pfSense</span>
+              <span class="skill-tag">Zabbix 7.0</span>
+              <span class="skill-tag">Technitium DNS</span>
+              <span class="skill-tag">Passbolt</span>
+              <span class="skill-tag">Snipe-IT</span>
+              <span class="skill-tag">Netbird ZTNA</span>
+              <span class="skill-tag">SEQRITE EDR/XDR</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card experience-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-company">Tussor Machine Tools India Pvt Ltd</h3>
+                <div class="exp-location"><i data-lucide="map-pin" style="width:14px; height:14px;"></i> Tiruppur, Tamil Nadu, India</div>
+              </div>
+            </div>
+
+            <div class="role-block">
+              <h4 class="role-title">System Administrator</h4>
+              <span class="role-period">April 2022 – February 2023</span>
+              <ul class="exp-highlights-list">
+                <li>Administered Windows Server, Active Directory domain services, and FortiGate firewall rules.</li>
+                <li>Deployed OpenVAS vulnerability assessment tools for continuous risk monitoring.</li>
+                <li>Optimized SD-WAN traffic policies, implemented Proxmox VE virtualization, and configured TrueNAS storage arrays.</li>
+              </ul>
+            </div>
+
+            <div class="exp-tools-strip">
+              <span class="skill-tag">Windows Server</span>
+              <span class="skill-tag">Active Directory</span>
+              <span class="skill-tag">FortiGate</span>
+              <span class="skill-tag">OpenVAS</span>
+              <span class="skill-tag">Proxmox VE</span>
+              <span class="skill-tag">TrueNAS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card experience-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-company">ScribeEMR, Inc.</h3>
+                <div class="exp-location"><i data-lucide="map-pin" style="width:14px; height:14px;"></i> Coimbatore, Tamil Nadu, India</div>
+              </div>
+            </div>
+
+            <div class="role-block">
+              <h4 class="role-title">System Administrator</h4>
+              <span class="role-period">November 2021 – April 2022</span>
+              <ul class="exp-highlights-list">
+                <li>Managed Active Directory, endpoint security policies, backup routines, and VPN user access.</li>
+              </ul>
+            </div>
+
+            <div class="role-block">
+              <h4 class="role-title">Senior Support Engineer – IT</h4>
+              <span class="role-period">April 2021 – October 2021</span>
+              <ul class="exp-highlights-list">
+                <li>Delivered Tier 2/3 IT support, managed LAN/WAN operations, and configured email systems & access controls.</li>
+              </ul>
+            </div>
+
+            <div class="exp-tools-strip">
+              <span class="skill-tag">Windows Server</span>
+              <span class="skill-tag">Active Directory</span>
+              <span class="skill-tag">VPN</span>
+              <span class="skill-tag">LAN/WAN</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card experience-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-company">Focus Edumatics Pvt Ltd</h3>
+                <div class="exp-location"><i data-lucide="map-pin" style="width:14px; height:14px;"></i> Coimbatore, Tamil Nadu, India</div>
+              </div>
+            </div>
+
+            <div class="role-block">
+              <h4 class="role-title">Senior Support Engineer – IT</h4>
+              <span class="role-period">April 2020 – March 2021</span>
+              <ul class="exp-highlights-list">
+                <li>Managed IT infrastructure operations, supported server/network equipment, and handled firewall/VPN configurations.</li>
+              </ul>
+            </div>
+
+            <div class="role-block">
+              <h4 class="role-title">Desktop Support Engineer</h4>
+              <span class="role-period">October 2019 – March 2020</span>
+              <ul class="exp-highlights-list">
+                <li>Provided desktop, network, and application support for day-to-day office IT operations.</li>
+              </ul>
+            </div>
+
+            <div class="exp-tools-strip">
+              <span class="skill-tag">IT Operations</span>
+              <span class="skill-tag">Firewall</span>
+              <span class="skill-tag">Network Support</span>
+              <span class="skill-tag">Asset Tracking</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS SECTION -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">
+          <i data-lucide="layers" style="width:14px; height:14px;"></i>
+          INFRASTRUCTURE CASE STUDIES
+        </div>
+        <h2 class="section-title">Selected Infrastructure Projects</h2>
+        <p class="section-subtitle">Real-world engineering initiatives executed to enhance security, observability, resilience, and cost efficiency.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="glass-card project-card">
+          <div class="project-card-header">
+            <span class="project-type-tag">NETWORK & SECURITY</span>
+            <i data-lucide="shield-check" style="color:var(--accent-cyan);"></i>
+          </div>
+          <h3 class="project-title">Enterprise Network Security & Zero Trust</h3>
+          <p class="project-desc">Strengthening network security through firewall deployment, site-to-site VPN connectivity, VLAN segmentation, and Netbird ZTNA.</p>
+          <div class="project-impact-box">
+            <div class="project-impact-label">KEY RESULT</div>
+            <div class="project-impact-value">Zero IP Conflicts & Zero Security Breaches</div>
+          </div>
+          <div class="project-tech-tags">
+            <span class="skill-tag">pfSense</span>
+            <span class="skill-tag">FortiGate</span>
+            <span class="skill-tag">IPSec VPN</span>
+            <span class="skill-tag">VLAN</span>
+            <span class="skill-tag">Netbird ZTNA</span>
+          </div>
+          <button class="btn btn-outline btn-sm project-btn" onclick="openProjectModal('p1')">
+            View Architecture Details <i data-lucide="arrow-right" style="width:14px; height:14px;"></i>
+          </button>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-card project-card">
+          <div class="project-card-header">
+            <span class="project-type-tag">OBSERVABILITY</span>
+            <i data-lucide="activity" style="color:var(--accent-teal);"></i>
+          </div>
+          <h3 class="project-title">Infrastructure Monitoring & Observability</h3>
+          <p class="project-desc">Implementing centralized monitoring and infrastructure visibility for multi-site enterprise systems.</p>
+          <div class="project-impact-box">
+            <div class="project-impact-label">KEY RESULT</div>
+            <div class="project-impact-value">99.2%–100% Uptime Sustained</div>
+          </div>
+          <div class="project-tech-tags">
+            <span class="skill-tag">Zabbix 7.0</span>
+            <span class="skill-tag">Technitium DNS</span>
+            <span class="skill-tag">Nginx</span>
+          </div>
+          <button class="btn btn-outline btn-sm project-btn" onclick="openProjectModal('p2')">
+            View Architecture Details <i data-lucide="arrow-right" style="width:14px; height:14px;"></i>
+          </button>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="glass-card project-card">
+          <div class="project-card-header">
+            <span class="project-type-tag">ENDPOINT SEC</span>
+            <i data-lucide="lock" style="color:var(--accent-blue);"></i>
+          </div>
+          <h3 class="project-title">Enterprise Endpoint Security</h3>
+          <p class="project-desc">Deploying endpoint protection solutions and strengthening endpoint security controls via Group Policy.</p>
+          <div class="project-impact-box">
+            <div class="project-impact-label">KEY RESULT</div>
+            <div class="project-impact-value">Centralized EDR/XDR Enforcement</div>
+          </div>
+          <div class="project-tech-tags">
+            <span class="skill-tag">SEQRITE EDR</span>
+            <span class="skill-tag">SEQRITE XDR</span>
+            <span class="skill-tag">Group Policy</span>
+          </div>
+          <button class="btn btn-outline btn-sm project-btn" onclick="openProjectModal('p3')">
+            View Architecture Details <i data-lucide="arrow-right" style="width:14px; height:14px;"></i>
+          </button>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="glass-card project-card">
+          <div class="project-card-header">
+            <span class="project-type-tag">COST OPTIMIZATION</span>
+            <i data-lucide="trending-down" style="color:var(--accent-teal);"></i>
+          </div>
+          <h3 class="project-title">Infrastructure Cost Optimization</h3>
+          <p class="project-desc">Optimizing infrastructure spending through hardware reuse, virtualization consolidation, and license management.</p>
+          <div class="project-impact-box">
+            <div class="project-impact-label">KEY RESULT</div>
+            <div class="project-impact-value">₹55.9 Lakh+ Verified Savings</div>
+          </div>
+          <div class="project-tech-tags">
+            <span class="skill-tag">Proxmox VE</span>
+            <span class="skill-tag">VMware</span>
+            <span class="skill-tag">Hyper-V</span>
+            <span class="skill-tag">TrueNAS</span>
+          </div>
+          <button class="btn btn-outline btn-sm project-btn" onclick="openProjectModal('p4')">
+            View Architecture Details <i data-lucide="arrow-right" style="width:14px; height:14px;"></i>
+          </button>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="glass-card project-card">
+          <div class="project-card-header">
+            <span class="project-type-tag">GOVERNANCE</span>
+            <i data-lucide="database" style="color:var(--accent-cyan);"></i>
+          </div>
+          <h3 class="project-title">IT Asset Governance</h3>
+          <p class="project-desc">Centralizing IT asset management, compliance tracking, and audit readiness across enterprise inventory.</p>
+          <div class="project-impact-box">
+            <div class="project-impact-label">KEY RESULT</div>
+            <div class="project-impact-value">1,641 IT Assets Governed</div>
+          </div>
+          <div class="project-tech-tags">
+            <span class="skill-tag">Snipe-IT</span>
+            <span class="skill-tag">Passbolt</span>
+            <span class="skill-tag">Active Directory</span>
+          </div>
+          <button class="btn btn-outline btn-sm project-btn" onclick="openProjectModal('p5')">
+            View Architecture Details <i data-lucide="arrow-right" style="width:14px; height:14px;"></i>
+          </button>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="glass-card project-card">
+          <div class="project-card-header">
+            <span class="project-type-tag">CLOUD RESILIENCE</span>
+            <i data-lucide="cloud-lightning" style="color:var(--accent-teal);"></i>
+          </div>
+          <h3 class="project-title">Infrastructure Resilience & DR</h3>
+          <p class="project-desc">Supporting high-availability infrastructure, off-site backup strategies, and hybrid cloud disaster recovery.</p>
+          <div class="project-impact-box">
+            <div class="project-impact-label">KEY RESULT</div>
+            <div class="project-impact-value">RTO &lt; 1 Hr / RPO &lt; 15 Mins</div>
+          </div>
+          <div class="project-tech-tags">
+            <span class="skill-tag">Microsoft Azure</span>
+            <span class="skill-tag">Proxmox VE</span>
+            <span class="skill-tag">TrueNAS</span>
+          </div>
+          <button class="btn btn-outline btn-sm project-btn" onclick="openProjectModal('p6')">
+            View Architecture Details <i data-lucide="arrow-right" style="width:14px; height:14px;"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RECRUITER CLI TERMINAL WIDGET -->
+  <section class="terminal-section">
+    <div class="container">
+      <div class="section-header text-center" style="margin-bottom:2rem;">
+        <div class="section-tag">
+          <i data-lucide="terminal" style="width:14px; height:14px;"></i>
+          INTERACTIVE DIAGNOSTIC CONSOLE
+        </div>
+        <h2 class="section-title">Infra CLI Telemetry</h2>
+        <p class="section-subtitle">Run diagnostic commands to query Karthick's system status, skills, and metrics.</p>
+      </div>
+
+      <div class="terminal-wrapper">
+        <div class="terminal-bar">
+          <div class="terminal-dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+          </div>
+          <div class="terminal-title">karthick@infra-sec-node01:~ (zsh)</div>
+          <div style="width:40px;"></div>
+        </div>
+
+        <div class="terminal-body" id="terminalBody">
+          <div class="terminal-output-line">Welcome to <span class="cmd-success">Karthick K Telemetry Console v2.4</span>. Type <span class="cmd-prompt">help</span> for commands.</div>
+          <div class="terminal-output-line"><span class="cmd-prompt">karthick@infra-sec:~$</span> status</div>
+          <div class="terminal-output-line">[SYSTEM STATUS TELEMETRY REPORT]</div>
+          <div class="terminal-output-line">  ● Enterprise Uptime       : <span class="cmd-success">99.2% – 100.0%</span></div>
+          <div class="terminal-output-line">  ● Managed Assets           : <span class="cmd-success">1,641 Nodes</span></div>
+          <div class="terminal-output-line">  ● Firewalls & ZTNA Guard  : <span class="cmd-success">ENFORCED</span></div>
+        </div>
+
+        <div class="terminal-quick-btns">
+          <span style="font-size:0.75rem; color:var(--text-muted); align-self:center;">QUICK COMMANDS:</span>
+          <button class="term-btn" data-cmd="status">status</button>
+          <button class="term-btn" data-cmd="ping">ping</button>
+          <button class="term-btn" data-cmd="whoami">whoami</button>
+          <button class="term-btn" data-cmd="skills">skills</button>
+          <button class="term-btn" data-cmd="metrics">metrics</button>
+          <button class="term-btn" data-cmd="resume">resume</button>
+          <button class="term-btn" data-cmd="clear">clear</button>
+        </div>
+
+        <div class="terminal-body" style="min-height:auto; padding-top:0.5rem; padding-bottom:1rem; border-top:1px solid #151E2E;">
+          <div class="terminal-input-row">
+            <span class="cmd-prompt">karthick@infra-sec:~$</span>
+            <input type="text" id="terminalInput" class="terminal-input" placeholder="Type a command (e.g. help, ping, skills)..." autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS & EDUCATION SECTION -->
+  <section id="certifications" class="section-padding" style="background:var(--bg-slate);">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">
+          <i data-lucide="award" style="width:14px; height:14px;"></i>
+          CREDENTIALS & EDUCATION
+        </div>
+        <h2 class="section-title">Certifications & Education</h2>
+        <p class="section-subtitle">Verified industry accreditations and formal academic qualifications.</p>
+      </div>
+
+      <div class="cert-grid">
+        <div class="glass-card cert-card">
+          <div class="cert-badge-icon"><i data-lucide="network"></i></div>
+          <div>
+            <h3 class="cert-name">CCNA</h3>
+            <p class="cert-issuer">Cisco Certified Network Associate</p>
+          </div>
+        </div>
+
+        <div class="glass-card cert-card">
+          <div class="cert-badge-icon"><i data-lucide="server"></i></div>
+          <div>
+            <h3 class="cert-name">MCSA</h3>
+            <p class="cert-issuer">Microsoft Certified Solutions Associate</p>
+          </div>
+        </div>
+
+        <div class="glass-card cert-card">
+          <div class="cert-badge-icon"><i data-lucide="cloud"></i></div>
+          <div>
+            <h3 class="cert-name">AWS</h3>
+            <p class="cert-issuer">Amazon Web Services</p>
+          </div>
+        </div>
+
+        <div class="glass-card cert-card">
+          <div class="cert-badge-icon"><i data-lucide="shield-alert"></i></div>
+          <div>
+            <h3 class="cert-name">VAPT</h3>
+            <p class="cert-issuer">Vulnerability Assessment & Penetration Testing</p>
+          </div>
+        </div>
+
+        <div class="glass-card cert-card" style="grid-column: span 2;">
+          <div class="cert-badge-icon" style="border-color:var(--accent-teal); color:var(--accent-teal);"><i data-lucide="shield-check"></i></div>
+          <div>
+            <h3 class="cert-name">SOC Analyst Bootcamp</h3>
+            <p class="cert-issuer">Prompt Infotech, 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Card -->
+      <div class="glass-card education-card">
+        <div class="edu-icon"><i data-lucide="graduation-cap"></i></div>
+        <div>
+          <h3 class="edu-degree">Bachelor of Technology (B.Tech) — Information Technology</h3>
+          <p class="edu-institution">J.K.K. Munirajah College of Technology</p>
+          <span class="edu-period">April 2012 – May 2016</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag">
+          <i data-lucide="mail" style="width:14px; height:14px;"></i>
+          LET'S CONNECT
+        </div>
+        <h2 class="section-title">Let's Build Something Reliable.</h2>
+        <p class="section-subtitle">Have an infrastructure challenge, a security initiative, or an opportunity to collaborate? Let's connect.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-panel">
+          <div class="glass-card contact-method-card" onclick="window.location.href='mailto:karthisysadm@gmail.com'">
+            <div class="contact-method-icon"><i data-lucide="mail"></i></div>
+            <div>
+              <div class="contact-label">EMAIL ADDRESS</div>
+              <div class="contact-val">karthisysadm@gmail.com</div>
+            </div>
+            <button class="btn btn-secondary btn-sm" style="margin-left:auto;" onclick="event.stopPropagation(); copyToClipboard('karthisysadm@gmail.com', 'Email')">
+              <i data-lucide="copy" style="width:14px; height:14px;"></i>
+            </button>
+          </div>
+
+          <div class="glass-card contact-method-card" onclick="window.location.href='tel:+918056747586'">
+            <div class="contact-method-icon"><i data-lucide="phone"></i></div>
+            <div>
+              <div class="contact-label">PHONE / WHATSAPP</div>
+              <div class="contact-val">+91 80567 47586</div>
+            </div>
+            <button class="btn btn-secondary btn-sm" style="margin-left:auto;" onclick="event.stopPropagation(); copyToClipboard('+918056747586', 'Phone number')">
+              <i data-lucide="copy" style="width:14px; height:14px;"></i>
+            </button>
+          </div>
+
+          <div class="glass-card contact-method-card">
+            <div class="contact-method-icon"><i data-lucide="map-pin"></i></div>
+            <div>
+              <div class="contact-label">LOCATION</div>
+              <div class="contact-val">Bengaluru, Karnataka, India</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="glass-card contact-form-card">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName" class="form-label">Your Name *</label>
+              <input type="text" id="contactName" class="form-input" placeholder="e.g. Alex Morgan" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Your Email *</label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="e.g. alex@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Message / Requirement *</label>
+              <textarea id="contactMessage" class="form-textarea" placeholder="Describe your infrastructure, security, or position requirement..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              Send Message <i data-lucide="send" style="width:16px; height:16px;"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="brand">
+            <div class="brand-monogram">KK</div>
+            <div class="brand-info">
+              <span class="brand-name">Karthick K</span>
+              <span class="brand-title">IT Infrastructure & Security Engineer</span>
+            </div>
+          </div>
+          <p class="footer-brand-tagline">Bengaluru, Karnataka, India.<br>Building secure, resilient, and intelligent enterprise IT environments.</p>
+        </div>
+
+        <div class="footer-nav">
+          <div class="footer-nav-col">
+            <h4>NAVIGATION</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#expertise">Expertise</a></li>
+              <li><a href="#experience">Experience</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h4>PORTFOLIO</h4>
+            <ul>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#certifications">Certifications</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="javascript:void(0)" onclick="openResumeModal()">Digital Resume</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; <span id="currentYear">2026</span> Karthick K. All rights reserved.</div>
+        <div style="font-family:var(--font-mono); color:var(--accent-teal);">"Designed with precision. Built for reliability."</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  </script>
+
+  <!-- Application Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
